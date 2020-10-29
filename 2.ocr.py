@@ -14,4 +14,4 @@ for jpg in jpgs:
     text = str(pytesseract.image_to_string(Image.open("imagenes\\"+jpg)))
     text = text.replace('-\n', '')
     f.write(text)    
-f.write(ocr)        
+f.close()       
