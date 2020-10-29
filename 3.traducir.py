@@ -5,6 +5,7 @@ outfile = "traducido.txt"
 
 original= open("caracteres_ocr.txt")
 f = open(outfile, "a")
+contador=1
 for lineas in original:
     info=translator.translate(lineas, dest='es')
     
@@ -13,5 +14,7 @@ for lineas in original:
     texto=texto+"\n"
     print(texto)
     f.write(texto)
+    print(f"-----------------------------Frase añadida {contador}---------------------")
+    contador += 1
 f.close()
 original.close()
