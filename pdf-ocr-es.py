@@ -1,0 +1,2 @@
+import troceador, ocr , traducir
+
